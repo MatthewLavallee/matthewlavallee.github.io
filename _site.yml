@@ -1,0 +1,27 @@
+name: "Personal Website"
+title: "Matthew P. Lavallee"
+description: |
+  My Website
+output_dir: "_site"
+navbar:
+  title: "Matthew P. Lavallee"
+  left:
+    - text: "Research"
+      href: about.html
+    - text: "Coding Samples"
+      href: about.html
+    - text: "Guides"
+      href: about.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: connect.html
+    - icon: fa-github fa-lg
+      href: http://github.com/MatthewLavallee
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/LavalleeMat
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/mattylavallee
+output:
+  html_document:
+    theme: simplex
+    css: 'styles.css'
