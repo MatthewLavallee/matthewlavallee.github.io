@@ -1,0 +1,15 @@
+---
+title: ''
+pagetitle: Matthew Lavallee
+
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<img src="images/profilepic.png" style="width:30%; border:5px solid; margin-right: 20px" align="left">
+
+I'm a young researcher looking to enter a career focused on empirical policy evaluation. My research interests include: healthcare, welfare policy, and labor markets.
+
+I graduated from Hampshire College in 2020, where I completed a BA in Economics and Mathematics. I'm currently working as a [Tobin Predoctoral Fellow](https://tobin.yale.edu/tobin-predoctoral-fellows) for the Yale School of Public Health.
+
+You can find my résumé [here](files/Lavallee_Matthew_CV.pdf)
