@@ -7,14 +7,14 @@ navbar:
   title: "Matthew P. Lavallee"
   left:
     - text: "Research"
-      href: about.html
-    - text: "Coding Samples"
-      href: about.html
-    - text: "Guides"
+      href: research.html
+    - text: "Thoughts"
       href: about.html
   right:
     - icon: fa-envelope fa-lg
       href: connect.html
+    - icon: ai-cv ai-lg
+      href: ./files/Lavallee_Matthew_CV.pdf
     - icon: fa-github fa-lg
       href: http://github.com/MatthewLavallee
     - icon: fa-twitter fa-lg
@@ -23,5 +23,5 @@ navbar:
       href: https://www.linkedin.com/in/mattylavallee
 output:
   html_document:
-    theme: simplex
+    theme: yeti
     css: 'styles.css'
