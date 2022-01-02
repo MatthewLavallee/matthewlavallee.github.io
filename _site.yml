@@ -4,7 +4,7 @@ description: |
   My Website
 output_dir: "."
 navbar:
-  title: "Matthew P. Lavallee"
+  title: "Matthew Lavallee"
   left:
     - text: "Research"
       href: research.html
@@ -23,5 +23,5 @@ navbar:
       href: https://www.linkedin.com/in/mattylavallee
 output:
   html_document:
-    theme: yeti
+    theme: flatly
     css: 'styles.css'

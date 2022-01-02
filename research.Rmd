@@ -8,4 +8,14 @@ pagetitle: Matthew Lavallee
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
 ## Work In Progress
+<br />
+Chima D. Ndumele, PhD; **Matthew P. Lavallee, BA**; Anthony Lollo, PhD; Joseph
+S. Ross, MD,MS; Erica Spatz, PhD; Mark Schlesinger, PhD; Reza Yousebi, PhD; and Jacob Wallace, PhD; (2022). *Random Assignment to Cardiovascular Physician Networks and the use of Health Services among Medicaid Managed Care Recipients.*  
+
+Jacob Wallace, PhD; Anthony Lollo, PhD; Kate A. Duchowny, PhD; **Matthew P. Lavallee, BA**; Chima D. Ndumele, PhD; (2022). *Inequities in Healthcare Access and Utilization in the US: Evidence from White and Black Medicaid Enrollees in 3 States.*
+
+Jacob Wallace, PhD; Anthony Lollo, PhD; Kate A. Duchowny, PhD; **Matthew P. Lavallee, BA**; Chima D. Ndumele, PhD; (2022). *Racial Inequities at the Actionable Level of a Medicaid Managed Care Plan: Evidence from Random Assignment in Medicaid.*
+
+<br />
+ 
 ## Publications
