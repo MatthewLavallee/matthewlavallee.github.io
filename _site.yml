@@ -2,7 +2,7 @@ name: "Personal Website"
 title: "Matthew P. Lavallee"
 description: |
   My Website
-output_dir: "_site"
+output_dir: "."
 navbar:
   title: "Matthew P. Lavallee"
   left:
