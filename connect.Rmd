@@ -3,10 +3,3 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
-
-Feel free to connect with me at:
-
-matt.p.lavallee@gmail.com
-
-
-or reach out on the social media linked above.
