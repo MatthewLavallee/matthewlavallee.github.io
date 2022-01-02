@@ -12,4 +12,4 @@ src="images/profilepic.png"
 style="width:30%; border:5px solid; margin-right:20px" 
 align="left"> 
 
-X
+Under construction.
