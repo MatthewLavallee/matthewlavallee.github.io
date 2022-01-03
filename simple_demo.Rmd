@@ -1,0 +1,32 @@
+---
+title: "simple_demo"
+author: "Lavallee, Matthew"
+date: "1/2/2022"
+output: html_document
+output_dir: "."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+
+## This is a draft thought
+
+here is the first plot
+
+<img 
+src="thoughts_images/html.png" 
+style="width:30%; border:5px solid; margin-right:20px" 
+align="center"> 
+
+
+```{r cars, include=FALSE}
+summary(cars)
+```
+
+```{r pressure, include=FALSE}
+x<-ggplot(pressure)+geom_point(aes(x=temperature,y=pressure))
+paste0(getwd(),"/thoughts_images")
+ggsave(x,path = paste0(getwd(),"/thoughts_images"),filename="html.png")
+```

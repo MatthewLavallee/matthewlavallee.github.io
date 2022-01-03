@@ -1,9 +1,26 @@
 ---
 title: ''
-pagetitle: My Thoughts
+pagetitle: Thoughts
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
-*Under Construction*
+*This page is still under construction and not ready for viewing.*
+```{r custom func,echo=F}
+library(htmltools)
+thumbnail <- function(title, img, href, caption = TRUE) {
+  div(class = "col-sm-4",
+      a(class = "thumbnail", title = title, href = href,
+        img(src = img),
+        div(class = if (caption) "caption",
+            if (caption) title)
+      )
+  )
+}
+```
+
+```{r, echo=F}
+thumbnail("First Post","thoughts_images/html.png","https://https://matthewlavallee.github.io/simple_demo.html")
+thumbnail("Second Post","thoughts_images/html.png","https://en.wikipedia.org/wiki/Apple")
+```
