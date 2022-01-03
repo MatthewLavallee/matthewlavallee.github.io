@@ -9,7 +9,7 @@ navbar:
     - text: "Research"
       href: research.html
     - text: "Thoughts"
-      href: about.html
+      href: thoughts.html
   right:
     - icon: fa-envelope fa-lg
       href: mailto:matthew.patrick.lavallee@gmail.com
