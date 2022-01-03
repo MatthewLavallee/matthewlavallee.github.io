@@ -21,6 +21,6 @@ thumbnail <- function(title, img, href, caption = TRUE) {
 ```
 
 ```{r, echo=F}
-thumbnail("First Post","thoughts_images/html.png","https://https://matthewlavallee.github.io/simple_demo.html")
+thumbnail("First Post","thoughts_images/html.png","https://matthewlavallee.github.io/simple_demo.html")
 thumbnail("Second Post","thoughts_images/html.png","https://en.wikipedia.org/wiki/Apple")
 ```
