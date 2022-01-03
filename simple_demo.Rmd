@@ -1,10 +1,16 @@
 ---
+pagetitle: simpledemo
 output: 
   html_document
 ---
-<span style='font-size: 20px'>The Problem with Demos</style>\
+<link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
+
+<p style="line-height:80%">
+<span style='font-size:40px'>The Problem with Demos</style>\
+<br>
 <span style='font-size:10px;margin-left:10px'>January 1st, 2022</style>\
 <span style='font-size:10px;margin-left:10px'>Matthew Lavallee</style>\
+</p>
 
 ---
 
@@ -12,7 +18,6 @@ Eric Carle (June 25, 1929 – May 23, 2021) was an American author, designer and
 
 In 2003, the American Library Association awarded Carle the biennial Laura Ingalls Wilder Medal (now called the Children's Literature Legacy Award), a prize for writers or illustrators of children's books published in the U.S. who have made lasting contributions to the field. Carle was also a U.S. nominee for the biennial, international Hans Christian Andersen Award in 2010.[4]
 
-\
 <img 
 src="thoughts_images/html.png" 
 style="width:80%; border:3px solid;" 
