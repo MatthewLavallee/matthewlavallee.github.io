@@ -7,7 +7,7 @@ pagetitle: Matthew Lavallee
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
-## Work In Progress
+## In Preparation
 <br />
 Chima D. Ndumele, PhD; **Matthew P. Lavallee, BA**; Anthony Lollo, PhD; Joseph
 S. Ross, MD,MS; Erica Spatz, PhD; Mark Schlesinger, PhD; Reza Yousebi, PhD; and Jacob Wallace, PhD; (2022). *Random Assignment to Cardiovascular Physician Networks and the use of Health Services among Medicaid Managed Care Recipients.*  
