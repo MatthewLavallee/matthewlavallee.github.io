@@ -11,4 +11,6 @@ src="images/profilepic.png"
 style="width:30%; border:5px solid; margin-right:20px" 
 align="left"> 
 
-Under construction.
+I am currently a pre-doctoral fellow with the Tobin Center for Economic Policy and Yale School of Public Health researching topics at the intersection of health economics and health policy. I am interesting in pursuing a PhD with a focus on policy, health, and labor.
+
+I graduated with a BA in Economics & Mathematics from Hampshire College in 2020.
