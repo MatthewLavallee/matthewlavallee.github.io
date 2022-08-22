@@ -1,15 +1,29 @@
 ---
-title: ''
-pagetitle: Matthew Lavallee
-
+title: "Matthew Lavallee"
+image: "images/profilepic.png"
+links:
+  - label: '`r icons::academicons("google-scholar")`'
+    url: "https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en"
+  - label: '`r fontawesome::fa("github")`'
+    url: "https://github.com/MatthewLavallee"
+  - label: '`r fontawesome::fa("twitter")`'
+    url: "https://twitter.com/LavalleeMat"
+  - label: '`r fontawesome::fa("linkedin")`'
+    url: "https://www.linkedin.com/in/mattylavallee/"
+  - label: "Publications"
+    url: pubs.html
+output: 
+  postcards::trestles
+site: distill::distill_website
 ---
 
-<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
-<img src="images/profilepic.png" style="width:30%; border:5px solid; margin-right: 20px" align="left">
+```{r echo = FALSE}
+set.seed(1234)
+```
+# About 
 
-I'm a young researcher looking to enter a career focused on empirical policy evaluation. My research interests include: healthcare, welfare policy, and labor markets.
+I am a Research Associate at Boston College studying disparities in health care and the Social Safety Net in the United States. Previously, I spent two years as a Pre-Doctoral Fellow with [Yale's Tobin Center of Economic Policy](https://tobin.yale.edu/tobin-predoctoral-fellows) and [Yale's School of Public Health](https://ysph.yale.edu/).
 
-I graduated from Hampshire College in 2020, where I completed a BA in Economics and Mathematics. I'm currently working as a [Tobin Predoctoral Fellow](https://tobin.yale.edu/tobin-predoctoral-fellows) for the Yale School of Public Health. X
-
-You can find my CV [here](files/Lavallee_Matthew_CV.pdf)
+I earned my BA in Economics & Mathematics from Hampshire College in 2020. Feel free to view my [CV](./files/Lavallee_Matthew_CV.pdf).
