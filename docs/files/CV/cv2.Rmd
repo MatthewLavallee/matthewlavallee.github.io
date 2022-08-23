@@ -1,0 +1,61 @@
+---
+output: stevetemplates::cv
+geometry: margin=1in
+
+title: "Condensed CV"
+author: Matthew Lavallee
+
+jobtitle: ""
+address: ""
+fontawesome: yes
+#email: guinness@consumer-care.net
+github: MatthewLavallee
+twitter: LavalleeMat
+#osf: "Enter 5 digit osf string here"
+#phone: "774 289 8298"
+web: matthewlavallee.github.io
+updated: TRUE
+rdateformat: "`r format(Sys.time(), '%d %b %Y')`"
+
+keywords: R Markdown, academic CV, template
+
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
+fontsize: 11pt
+linkcolor: blue
+urlcolor: blue
+---
+# Education
+
+*Hampshire College*, B.A. Economics & Mathematics \hfill 2020
+
+# Employment
+
+**Data Scientist** \hfill 2020
+
+*Western Massachusetts Health Equity; National Science Foundation*
+
+**Pre-Doctoral Fellow** \hfill 2020-2022
+
+*Yale University, School of Public Health; Tobin Center for Economic Policy* 
+
+**Research Associate** \hfill 2022-2023
+
+*Boston College, School of Nursing*
+
+# Publications
+
+## Journal Articles
+
+*Jacob Wallace, Anthony Lollo, Kate A Duchowny, **Matthew Lavallee**, Chima D Ndumele*. 2022. ["Disparities in Health Care Spending and Utilization Among Black and White Medicaid Enrollees"](https://jamanetwork.com/journals/jama-health-forum/fullarticle/2793285) *JAMA Health Forum*
+
+# Teaching
+**Teaching Assistant** \hfill 2018, 2020
+
+*Hampshire College, Department of Natural Science*
+
+Taught introductory Statistics and Data Science concepts. Assisted in developing syllabi, managing R-language related assignments and student development.
+
+# References
+
+Available upon request.
