@@ -33,7 +33,7 @@ urlcolor: blue
 
 **Data Scientist** \hfill 2020
 
-*Western Massachusetts Health Equity; National Science Foundation*
+*Western Massachusetts Health Equity; Data Science Corps*
 
 **Pre-Doctoral Fellow** \hfill 2020-2022
 
