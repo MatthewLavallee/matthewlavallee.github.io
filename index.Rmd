@@ -21,7 +21,7 @@ site: distill::distill_website
 
 ## About Me
 
-I am PhD student at the Bloomberg School of Public Health, training to become a health economist. My research interests include Medicaid, the social safety net, and how programs interact. Before graduate school, I worked as a Tobin Center / Economics Pre-Doctoral Fellow researching access and quality of care in Medicaid.
+I am PhD student at the Bloomberg School of Public Health, training to become a health economist. My research interests include Medicaid, the social safety net, and how programs interact. Before graduate school, I worked as a Tobin Center / Economics Pre-Doctoral Fellow researching access to care and quality of care in Medicaid.
 
 ## Education
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hampshire College - Amherst, Massachusetts
