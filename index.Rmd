@@ -8,7 +8,7 @@ links:
     url: "https://twitter.com/LavalleeMat"
   - label: '`r fontawesome::fa("linkedin")`'
     url: "https://www.linkedin.com/in/mattylavallee/"
-  - label: '`r icons::academicons("cv")`'
+  - label: 'CV'
     url: files/CV/cv2.pdf
   - label: "Research"
     url: pubs.html
