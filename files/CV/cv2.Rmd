@@ -9,7 +9,7 @@ jobtitle: ""
 address: ""
 fontawesome: yes
 #email: guinness@consumer-care.net
-github: MatthewLavallee
+#github: MatthewLavallee
 twitter: LavalleeMat
 #osf: "Enter 5 digit osf string here"
 #phone: "774 289 8298"
@@ -27,7 +27,15 @@ urlcolor: blue
 ---
 # Education
 
-*Hampshire College*, B.A. Economics & Mathematics \hfill 2020
+BA Economics & Mathematics \hfill 2020
+
+*Hampshire College*
+
+
+
+PhD Health Policy & Management \hfill Expected 2027
+
+*Johns Hopkins Bloomberg School of Public Health*
 
 # Employment
 
@@ -59,3 +67,4 @@ Taught introductory Statistics and Data Science concepts. Assisted in developing
 # References
 
 Available upon request.
+

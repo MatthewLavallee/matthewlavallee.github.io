@@ -4,8 +4,6 @@ image: "images/profilepic.png"
 links:
   - label: '`r icons::academicons("google-scholar")`'
     url: "https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en"
-  - label: '`r fontawesome::fa("github")`'
-    url: "https://github.com/MatthewLavallee"
   - label: '`r fontawesome::fa("twitter")`'
     url: "https://twitter.com/LavalleeMat"
   - label: '`r fontawesome::fa("linkedin")`'
@@ -20,10 +18,9 @@ site: distill::distill_website
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
 ```{r echo = FALSE}
-set.seed(1234)
 ```
 # About Me
 
-I am a Research Associate at Boston College studying disparities in health care, and the social safety net in the United States. Previously, I spent two years as a Pre-Doctoral Fellow with [Yale's Tobin Center of Economic Policy](https://tobin.yale.edu/tobin-predoctoral-fellows) and [Yale's School of Public Health](https://ysph.yale.edu/) working on access and quality of care in Medicaid.
+I am a PhD student in Health Policy and Management at the Bloomberg School of Public Health studying how safety net programs interact to shape health. Previously, I spent two years as a Pre-Doctoral Fellow with [Yale's Tobin Center of Economic Policy](https://tobin.yale.edu/tobin-predoctoral-fellows) and [Yale's School of Public Health](https://ysph.yale.edu/) working on access and quality of care in Medicaid.
 
 I earned my BA in Economics & Mathematics from Hampshire College in 2020. You can view my CV [here](./files/CV/cv2.pdf).
