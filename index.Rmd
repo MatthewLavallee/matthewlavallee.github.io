@@ -11,7 +11,7 @@ links:
   - label: 'CV'
     url: files/CV/cv_lavallee.pdf
   - label: "Research"
-    url: pubs.html
+    url: research.html
 output: 
   postcards::trestles
 site: distill::distill_website
@@ -21,7 +21,7 @@ site: distill::distill_website
 
 ### About
 
-I am PhD student at the Johns Hopkins Bloomberg School of Public Health, training to become a health economist. My research interests include Medicaid, the social safety net, and how programs interact. Before graduate school, I worked as a Tobin Center / Economics Pre-Doctoral Fellow researching access to care and quality of care in Medicaid, and how social programs shape care within Medicaid.
+I am PhD student at the Johns Hopkins Bloomberg School of Public Health, training to become a health economist. My research interests include Medicaid, the social safety net, and how programs interact. Before graduate school, I worked as a Tobin Center / Economics Pre-Doctoral Fellow researching access to care and quality of care in Medicaid, and how social programs shape care for Medicaid enrollees.
 
 ### Education
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hampshire College - Amherst, Massachusetts
