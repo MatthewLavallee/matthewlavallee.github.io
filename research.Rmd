@@ -6,6 +6,8 @@ links:
     url: "https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en"
   - label: '`r fontawesome::fa("twitter")`'
     url: "https://twitter.com/LavalleeMat"
+  - label: '`r fontawesome::fa("github")`'
+    url: "https://github.com/MatthewLavallee"
   - label: '`r fontawesome::fa("linkedin")`'
     url: "https://www.linkedin.com/in/mattylavallee/"
   - label: 'CV'
