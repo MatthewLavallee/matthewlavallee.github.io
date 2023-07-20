@@ -1,5 +1,6 @@
 ---
 title: "Matthew Lavallee"
+image: "images/profilepic.png"
 links:
   - label: '`r icons::academicons("google-scholar")`'
     url: "https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en"
