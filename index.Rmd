@@ -9,7 +9,7 @@ links:
   - label: '`r fontawesome::fa("linkedin")`'
     url: "https://www.linkedin.com/in/mattylavallee/"
   - label: 'CV'
-    url: files/CV/cv2.pdf
+    url: files/CV/cv_lavallee.pdf
   - label: "Research"
     url: pubs.html
 output: 
