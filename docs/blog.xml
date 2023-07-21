@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Matthew Lavallee</title>
+    <link>matthewlavallee.github.io/</link>
+    <atom:link href="matthewlavallee.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+    <description>Matthew Lavallee's Website
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>&lt;placeholder&gt;</title>
+      <dc:creator>Matthew Lavallee</dc:creator>
+      <link>matthewlavallee.github.io/posts/welcome</link>
+      <description>WIP</description>
+      <guid>matthewlavallee.github.io/posts/welcome</guid>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

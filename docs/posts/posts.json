@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "path": "posts/welcome/",
+    "title": "<placeholder>",
+    "description": "WIP",
+    "author": [
+      {
+        "name": "Matthew Lavallee",
+        "url": "https://mplavallee.com"
+      }
+    ],
+    "date": "2023-07-20",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2023-07-20T21:48:28-04:00",
+    "input_file": {}
+  }
+]

@@ -1,0 +1,190 @@
+---
+layout: default
+title: William Schpero | Publications
+publications: active
+---
+
+<div class="info">
+
+<p><h3><b>Peer-Reviewed Research</b></h3></p>
+
+{% assign sorted = site.peer-reviewed | sort: 'order' | reverse %}
+{% for reference in sorted %}
+<p>
+  {{ reference.authors }}.
+  {% if reference.link %}
+    <a href="{{ reference.link }}" target="_blank">{{ reference.title }}</a>.
+    {% else %}
+    {{ reference.title }}.
+  {% endif %}
+  {% if reference.journal %}
+    <i>{{ reference.journal }}</i>.
+  {% endif %}
+  {% if reference.meta %}
+    {{ reference.meta }}.
+  {% endif %}
+  {% if reference.abstract == "y" %}
+    <a class="btn btn-default btn-xs collapsed" data-toggle="collapse" data-target="#{{ reference.target }}a" role="button" aria-expanded="false" aria-controls="{{ reference.target }}a"><span class="if-collapsed">Abstract [+]</span><span class="if-not-collapsed">Abstract [-]</span></a>
+  {% endif %}
+  {% if reference.award %}
+    <a class="btn btn-default btn-xs collapsed" data-toggle="collapse" data-target="#{{ reference.target }}aw" role="button" aria-expanded="false" aria-controls="{{ reference.target }}aw"><span class="if-collapsed">Award [+]</span><span class="if-not-collapsed">Award [-]</span></a>
+  {% endif %}
+  {% if reference.coverage %}
+    <a class="btn btn-default btn-xs collapsed" data-toggle="collapse" data-target="#{{ reference.target }}c" role="button" aria-expanded="false" aria-controls="{{ reference.target }}c"><span class="if-collapsed">Coverage [+]</span><span class="if-not-collapsed">Coverage [-]</span></a>
+  {% endif %}
+</p>
+
+{% if reference.abstract == "y" %}
+  <div class="collapse" id="{{ reference.target }}a">
+    <div class="panel panel-default">
+    <div class="panel-heading"><b>Abstract</b></div>
+    <div class="panel-body">
+      {{ reference.content }}
+    </div>
+    </div>
+  </div>
+{% endif %}
+{% if reference.award %}
+  <div class="collapse" id="{{ reference.target }}aw">
+    <div class="panel panel-default">
+    <div class="panel-heading"><b>Award</b></div>
+    <div class="panel-body">
+      {{ reference.award }}
+    </div>
+    </div>
+  </div>
+  {% endif %}
+{% if reference.coverage %}
+  <div class="collapse" id="{{ reference.target }}c">
+    <div class="panel panel-default">
+    <div class="panel-heading"><b>Coverage</b></div>
+    <div class="panel-body">
+      {{ reference.coverage }}
+    </div>
+    </div>
+  </div>
+{% endif %}
+{% endfor %}
+
+<p><h3><b>Working Papers</b></h3></p>
+
+{% assign sorted = site.working-papers | sort: 'order' | reverse %}
+{% for reference in sorted %}
+<p>
+  {{ reference.authors }}.
+  {% if reference.link %}
+    <a href="{{ reference.link }}" target="_blank">{{ reference.title }}</a>.
+    {% else %}
+    {{ reference.title }}.
+  {% endif %}
+  {% if reference.journal %}
+    <i>{{ reference.journal }}</i>.
+  {% endif %}
+  {% if reference.meta %}
+    {{ reference.meta }}.
+  {% endif %}
+  {% if reference.abstract == "y" %}
+    <a class="btn btn-default btn-xs collapsed" data-toggle="collapse" data-target="#{{ reference.target }}a" role="button" aria-expanded="false" aria-controls="{{ reference.target }}a"><span class="if-collapsed">Abstract [+]</span><span class="if-not-collapsed">Abstract [-]</span></a>
+  {% endif %}
+  {% if reference.award %}
+    <a class="btn btn-default btn-xs collapsed" data-toggle="collapse" data-target="#{{ reference.target }}aw" role="button" aria-expanded="false" aria-controls="{{ reference.target }}aw"><span class="if-collapsed">Award [+]</span><span class="if-not-collapsed">Award [-]</span></a>
+  {% endif %}
+  {% if reference.coverage %}
+    <a class="btn btn-default btn-xs collapsed" data-toggle="collapse" data-target="#{{ reference.target }}c" role="button" aria-expanded="false" aria-controls="{{ reference.target }}c"><span class="if-collapsed">Coverage [+]</span><span class="if-not-collapsed">Coverage [-]</span></a>
+  {% endif %}
+</p>
+
+{% if reference.abstract == "y" %}
+  <div class="collapse" id="{{ reference.target }}a">
+    <div class="panel panel-default">
+    <div class="panel-heading"><b>Abstract</b></div>
+    <div class="panel-body">
+      {{ reference.content }}
+    </div>
+    </div>
+  </div>
+{% endif %}
+{% if reference.award %}
+  <div class="collapse" id="{{ reference.target }}aw">
+    <div class="panel panel-default">
+    <div class="panel-heading"><b>Award</b></div>
+    <div class="panel-body">
+      {{ reference.award }}
+    </div>
+    </div>
+  </div>
+  {% endif %}
+{% if reference.coverage %}
+  <div class="collapse" id="{{ reference.target }}c">
+    <div class="panel panel-default">
+    <div class="panel-heading"><b>Coverage</b></div>
+    <div class="panel-body">
+      {{ reference.coverage }}
+    </div>
+    </div>
+  </div>
+{% endif %}
+{% endfor %}
+
+<p><h3><b>Commentary and Reports</b></h3></p>
+
+{% assign sorted = site.commentary | sort: 'order' | reverse %}
+{% for reference in sorted %}
+<p>
+  {{ reference.authors }}.
+  {% if reference.link %}
+    <a href="{{ reference.link }}" target="_blank">{{ reference.title }}</a>.
+    {% else %}
+    {{ reference.title }}.
+  {% endif %}
+  {% if reference.journal %}
+    <i>{{ reference.journal }}</i>.
+  {% endif %}
+  {% if reference.meta %}
+    {{ reference.meta }}.
+  {% endif %}
+  {% if reference.abstract == "y" %}
+    <a class="btn btn-default btn-xs collapsed" data-toggle="collapse" data-target="#{{ reference.target }}a" role="button" aria-expanded="false" aria-controls="{{ reference.target }}a"><span class="if-collapsed">Abstract [+]</span><span class="if-not-collapsed">Abstract [-]</span></a>
+  {% endif %}
+  {% if reference.award %}
+    <a class="btn btn-default btn-xs collapsed" data-toggle="collapse" data-target="#{{ reference.target }}aw" role="button" aria-expanded="false" aria-controls="{{ reference.target }}aw"><span class="if-collapsed">Award [+]</span><span class="if-not-collapsed">Award [-]</span></a>
+  {% endif %}
+  {% if reference.coverage %}
+    <a class="btn btn-default btn-xs collapsed" data-toggle="collapse" data-target="#{{ reference.target }}c" role="button" aria-expanded="false" aria-controls="{{ reference.target }}c"><span class="if-collapsed">Coverage [+]</span><span class="if-not-collapsed">Coverage [-]</span></a>
+  {% endif %}
+</p>
+
+{% if reference.abstract == "y" %}
+  <div class="collapse" id="{{ reference.target }}a">
+    <div class="panel panel-default">
+    <div class="panel-heading"><b>Abstract</b></div>
+    <div class="panel-body">
+      {{ reference.content }}
+    </div>
+    </div>
+  </div>
+{% endif %}
+{% if reference.award %}
+  <div class="collapse" id="{{ reference.target }}aw">
+    <div class="panel panel-default">
+    <div class="panel-heading"><b>Award</b></div>
+    <div class="panel-body">
+      {{ reference.award }}
+    </div>
+    </div>
+  </div>
+  {% endif %}
+{% if reference.coverage %}
+  <div class="collapse" id="{{ reference.target }}c">
+    <div class="panel panel-default">
+    <div class="panel-heading"><b>Coverage</b></div>
+    <div class="panel-body">
+      {{ reference.coverage }}
+    </div>
+    </div>
+  </div>
+{% endif %}
+{% endfor %}
+
+<br>
+</div>
