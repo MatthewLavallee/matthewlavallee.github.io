@@ -2,16 +2,16 @@
 title: "Matthew Lavallee"
 image: "images/profilepic.png"
 links:
-  - label: '`r fontawesome::fa("twitter")`'
+  - label: '`r fontawesome::fa("twitter")` Twitter'
     url: "https://twitter.com/LavalleeMat"
-  - label: '`r fontawesome::fa("github")`'
+  - label: '`r fontawesome::fa("github")` Github'
     url: "https://github.com/MatthewLavallee"
-  - label: '`r fontawesome::fa("linkedin")`'
+  - label: '`r fontawesome::fa("linkedin")` Linkedin'
     url: "https://www.linkedin.com/in/mattylavallee/"
   - label: 'CV'
     url: files/CV/cv_lavallee.pdf
   - label: "Research"
-    url: research.html
+    url: research2.qmd
 output: 
   postcards::trestles
 site: distill::distill_website
