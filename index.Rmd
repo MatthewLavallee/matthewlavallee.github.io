@@ -11,7 +11,7 @@ links:
   - label: 'CV'
     url: files/CV/cv_lavallee.pdf
   - label: "Research"
-    url: research2.qmd
+    url: research.html
 output: 
   postcards::trestles
 site: distill::distill_website
