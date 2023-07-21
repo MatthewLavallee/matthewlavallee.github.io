@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/welcome/",
-    "title": "<placeholder>",
+    "title": "placeholder",
     "description": "WIP",
     "author": [
       {
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2023-07-20T21:48:28-04:00",
-    "input_file": {}
+    "last_modified": "2023-07-20T23:14:45-04:00",
+    "input_file": "welcome.knit.md"
   }
 ]
