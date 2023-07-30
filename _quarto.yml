@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  title: "Matthew Lavallee"
+  site-url: "https://www.mplavallee.com"
+  repo-url: "https://github.com/MatthewLavallee/matthewlavallee.github.io"
+  description: "Website of Matthew Lavallee"
+  google-analytics: "G-1GWH810RLY"
+  twitter-card: 
+    creator: "@lavalleemat"  
+  search: true
+  navbar:
+    left:
+      - href: files/cv_lavallee.pdf
+        text: CV
+      - href: research.qmd
+        text: Research
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [cosmo, theme-dark.scss]
+    mainfont: Montserrat
+    fontsize: 0.95em
+    toc: false
+
+editor: visual
