@@ -11,7 +11,7 @@ website:
   site-url: "https://www.mplavallee.com"
   repo-url: "https://github.com/MatthewLavallee/matthewlavallee.github.io"
   description: "Website of Matthew Lavallee"
-  cookie-consent: true
+  #cookie-consent: true
   google-analytics: "G-1GWH810RLY"
   twitter-card: 
     creator: "@lavalleemat"  
