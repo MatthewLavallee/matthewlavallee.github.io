@@ -27,8 +27,8 @@ gluefun <- function(df) {
     aria-expanded="false" 
     aria-controls="collapseExample"
     >
-  Abstract[+]
-</a> 
+    Abstract
+    </a> 
 <div class="collapse" id="collapse{df$short_id}">
   <div class="card card-body">
     {df$abstract}
