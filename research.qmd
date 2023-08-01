@@ -1,16 +1,53 @@
 ---
 title: "Research"
+css: styles.css
 ---
 
 ### Publications
 
 ------------------------------------------------------------------------
 
-#### 2022
+```{r,message=F,echo=F}
+#| results: asis
 
-Jacob Wallace, Anthony Lollo, Kate A Duchowny, **Matthew Lavallee**, Chima D Ndumele. 2022. ["Disparities in Health Care Spending and Utilization Among Black and White Medicaid Enrollees".](https://jamanetwork.com/journals/jama-health-forum/fullarticle/2793285) *JAMA Health Forum* <br>
+library(tidyverse)
+library(glue)
+library(data.table)
+library(here)
 
-#### 2023
+df<-readxl::read_xlsx(here("pubs","pubs.xlsx"))%>%
+  data.table()
+gluefun <- function(df) {
+  glue('<span> {df$authors}. {df$year}. [{df$title}]({df$link}) {df$journal}.</span>
+    <a 
+    type="button"
+    class="btn btn-sm"
+    data-bs-toggle="collapse"
+    data-bs-target="#collapse{df$short_id}" 
+    aria-expanded="false" 
+    aria-controls="collapseExample"
+    >
+  Abstract[+]
+</a> 
+<div class="collapse" id="collapse{df$short_id}">
+  <div class="card card-body">
+    {df$abstract}
+  </div>
+</div><br>')%>%print()
+}
+
+
+
+for (i in 1:nrow(df[,.N,year])) {
+  y<-df[,.N,year][order(year)][i,year]
+  pubs_y<-df[year==y]
+  print(glue(""))
+  print(glue('#### {y}'))
+  pubs_y[order(date)]%>%
+    split(1:nrow(pubs_y))%>%
+    walk(gluefun)
+}
+```
 
 ### Work In Progress
 
