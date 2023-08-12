@@ -1,7 +1,3 @@
-/* css styles */
-/* import the Bootstrap */
-@import "bootstrap";
-
 /* ------- customize primary button color -------- */   
 .btn {
   background-color: white;
