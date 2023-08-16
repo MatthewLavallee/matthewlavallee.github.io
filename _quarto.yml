@@ -20,7 +20,7 @@ website:
     left:
       - href: files/cv_lavallee.pdf
         text: CV
-      - href: research.qmd
+      - href: research/index.qmd
         text: Research
   
   page-footer:
