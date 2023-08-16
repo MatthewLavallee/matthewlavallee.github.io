@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.mplavallee.com/index.html</loc>
-    <lastmod>2023-08-16T18:02:49.408Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.mplavallee.com/blog.html</loc>
-    <lastmod>2023-07-30T18:03:16.879Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.mplavallee.com/research.html</loc>
-    <lastmod>2023-08-15T18:22:05.382Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.mplavallee.com/pubs/404.html</loc>
-    <lastmod>2023-08-01T19:32:30.577Z</lastmod>
+    <lastmod>2023-08-16T18:40:13.331Z</lastmod>
   </url>
   <url>
     <loc>https://www.mplavallee.com/research/index.html</loc>
-    <lastmod>2023-08-16T18:02:48.674Z</lastmod>
+    <lastmod>2023-08-16T18:40:10.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mplavallee.com/index.html</loc>
+    <lastmod>2023-08-16T18:40:27.821Z</lastmod>
   </url>
 </urlset>
