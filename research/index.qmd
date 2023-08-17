@@ -1,6 +1,10 @@
 ---
 title: "Research"
-css: styles.css
+format: 
+  html:
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [cosmo, theme-dark.scss]
 ---
 
 ### Publications
