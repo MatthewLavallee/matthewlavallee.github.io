@@ -1,5 +1,10 @@
 ---
 title: "Matthew Lavallee"
+format: 
+  html:
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [cosmo, theme-dark.scss]
 about:
   template: trestles
   image: files/profilepic.png
