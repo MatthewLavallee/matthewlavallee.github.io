@@ -1,4 +1,4 @@
-﻿@import"https://fonts.googleapis.com/css2?family=Montserrat";@import"https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap";.btn{background-color:#fff;color:#000;border-color:#dfdfdf;transition:all .7s}.btn:hover{color:#77b0ed;background-color:#fff;border-color:#dfdfdf}/*!
+﻿@import"https://fonts.googleapis.com/css2?family=Montserrat";@import"https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap";.btn-primary.basic{background-color:#fff;border:1px solid #dfdfdf;color:#000}.btn-primary.basic:hover{background-color:#dfdfdf;border:1px solid #fff;color:#fff}/*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.

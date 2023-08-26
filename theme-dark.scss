@@ -11,20 +11,26 @@ $navbar-bg: #212121;
 // Code blocks
 $code-block-bg-alpha: -.8;
 
-/* ------- customize primary button color -------- */   
-.btn {
-  background-color: black;
-  color: white;
-  border-color: white;
-  transition: all .7s;
-}
-.btn:hover {
-  color: #77b0ed;
-  background-color: #181818;
-  border-color: white;
-} 
 /* ------- customize collapsible text -------- */   
 .card {
   background-color: #181818 !important;
   border-color: white !important;
+}
+/* ------- customize button class -------- */
+@mixin button-variant($background, $border, $color) {
+    background-color: $body-bg;
+    border: 1px solid white;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        border: 1px solid $body-bg;
+        color: $body-bg;
+    }
+}
+
+.btn-primary {
+    &.basic {
+        @include button-variant(black, white, white);
+    }
 }

@@ -9,16 +9,21 @@ $body-color: black;
 // Code blocks
 $code-block-bg-alpha: -.8;
 
-/* ------- customize primary button color -------- */   
-.btn {
-  background-color: white;
-  color: black;
-  border-color: #dfdfdf;
-  transition: all .7s;
+/* ------- customize button class -------- */
+@mixin button-variant($background, $border, $color) {
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    color: black;
+
+    &:hover {
+        background-color: #dfdfdf;
+        border: 1px solid white;
+        color: white;
+    }
 }
 
-.btn:hover {
-  color: #77b0ed;
-  background-color: #fff;
-  border-color: #dfdfdf;
-}  
+.btn-primary {
+    &.basic {
+        @include button-variant(black, white, white);
+    }
+}
