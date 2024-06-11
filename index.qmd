@@ -26,7 +26,7 @@ comments: false
 
 ### About
 
-I am PhD student at the Johns Hopkins Bloomberg School of Public Health, training to become a health economist. My research interests include Medicaid, the social safety net, and how programs interact. Before graduate school, I worked as a Tobin Center / Economics Pre-Doctoral Fellow researching access to care and quality of care in Medicaid, and how social programs shape care for Medicaid enrollees.
+I am a PhD student at the Johns Hopkins Bloomberg School of Public Health, specializing in health economics. My research focuses on Medicaid, the social safety net, and the interactions between these programs. Prior to graduate school, I worked as a Pre-Doctoral Fellow at the Tobin Center for Economic Policy, where I researched access to care, quality of care in Medicaid, and the impact of social programs on Medicaid enrollees.
 
 ### Education
 
