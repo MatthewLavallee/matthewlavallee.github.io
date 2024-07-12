@@ -43,7 +43,7 @@ gluefun <- function(df) {
 
 
 for (i in 1:nrow(df[,.N,year])) {
-  y<-df[,.N,year][order(year)][i,year]
+  y<-df[,.N,year][order(-year)][i,year]
   pubs_y<-df[year==y]
   print(glue(""))
   print(glue('#### {y}'))
