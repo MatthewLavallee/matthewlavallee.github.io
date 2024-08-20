@@ -25,7 +25,7 @@ website:
   
   page-footer:
     left: |
-      {{< fa regular copyright >}} 2023 Matthew Lavallee.<br>
+      {{< fa regular copyright >}} 2024 Matthew Lavallee.<br>
       
     right: |
       Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/).<br>
