@@ -26,14 +26,4 @@ comments: false
 
 ### About
 
-I am a PhD student at the Johns Hopkins Bloomberg School of Public Health, specializing in health economics. My research focuses on Medicaid, the social safety net, and the interactions between these programs. Prior to graduate school, I worked as a Pre-Doctoral Fellow at the Tobin Center for Economic Policy, where I researched access to care, quality of care in Medicaid, and the impact of social programs on Medicaid enrollees.
-
-### Education
-
-      Hampshire College - Amherst, Massachusetts
-
-            *BA in Economics & Mathematics, 2020*
-
-      Johns Hopkins University - Baltimore, Maryland
-
-            *PhD in Health Economics & Policy, 2027 (expected)*
+I am a PhD student at the Johns Hopkins Bloomberg School of Public Health, specializing in health economics. My research focuses on Medicaid, social safety net programs, and their interactions. Before graduate school, I worked as a Pre-Doctoral Fellow at the Tobin Center for Economic Policy, where I researched Medicaid access, quality of care, and the impact of social programs on Medicaid enrollees.
