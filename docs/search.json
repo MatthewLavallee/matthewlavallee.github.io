@@ -7,13 +7,6 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Matthew Lavallee",
-    "section": "",
-    "text": "About\nI am a PhD student at the Johns Hopkins Bloomberg School of Public Health, specializing in health economics. My research focuses on Medicaid, the social safety net, and the interactions between these programs. Prior to graduate school, I worked as a Pre-Doctoral Fellow at the Tobin Center for Economic Policy, where I researched access to care, quality of care in Medicaid, and the impact of social programs on Medicaid enrollees.\n\n\nEducation\n      Hampshire College - Amherst, Massachusetts\n            BA in Economics & Mathematics, 2020\n      Johns Hopkins University - Baltimore, Maryland\n            PhD in Health Economics & Policy, 2027 (expected)"
-  },
-  {
     "objectID": "research/index.html",
     "href": "research/index.html",
     "title": "Research",
@@ -21,87 +14,10 @@
     "text": "Publications\n\n\n2023\n Matthew Lavallee, Sandro Galea, Nadia N. Abuelezam. 2023. Supplemental Nutrition Assistance Program Emergency Allotments and Food Security, Hospitalizations, and Hospital Capacity JAMA Network Open.  Abstract \n\n\nIMPORTANCE: Understanding how social policies shape health is a national priority, especially in the context of the COVID-19 pandemic.\nOBJECTIVE: To understand the association between politically motivated changes to Nebraska’s Supplemental Nutrition Assistance Program (SNAP) policy and public health measures during the COVID-19 pandemic.\nDESIGN, STUDY, AND PARTICIPANTS: This cross-sectional study used synthetic control methods to estimate the association of Nebraska’s decision to reject emergency allotments for the SNAP with food security and hospital capacity indicators. A counterfactual for Nebraska was created by weighting data from the rest of the US. State-level changes in Nebraska between March 2020 and March 2021 were included. Data were acquired from the Census Bureau’s Household Pulse Survey on individual food security and mental health indicators and from the US Centers for Disease Control and Prevention on hospital-level capacity indicators. Data analysis occurred between October 2022 and June 2023.\nINTERVENTION: The rejection of additional SNAP funds for low-income households in Nebraska from August to November 2020.\nMAIN OUTCOMES AND MEASURES: Food insecurity and inpatient bed use indicators (ie, inpatient beds filled, inpatient beds filled by patients with COVID-19, and inpatients with COVID-19).\nRESULTS: The survey data of 1 591 006 respondents from May 2020 to November 2020 was analyzed, and 24 869 (1.56%) lived in Nebraska. Nebraska’s population was composed of proportionally more White individuals (mean [SD], 88.70% [0.29%] vs 78.28% [0.26%]; P &lt; .001), fewer individuals who made more than $200 000 in 2019 (4.20% [0.45%] vs 5.22% [0.12%]; P &lt; .001), and more households sized 1 to 3 (63.41% [2.29%] vs 61.13% [1.10%); P = .03) compared with other states. Nebraska’s rejection of additional funding for SNAP recipients was associated with increases in food insecurity (raw mean [SD] difference 1.61% [1.30%]; relative difference, 19.63%; P = .02), percentage of inpatient beds filled by patients with COVID-19 (raw mean [SD] difference, 0.19% [1.55%]; relative difference, 3.90%; P = .02), and percentage of inpatient beds filled (raw mean [SD] difference, 2.35% [1.82%]; relative difference, 4.10%; P = .02).\nCONCLUSIONS AND RELEVANCE: In this cross-sectional study, the association between social policy, food security, health, and public health resources was examined, and the rejection of emergency allotments in Nebraska was associated with increased food insecurity. Additionally, this intervention was associated with an increased rate of hospitalizations for COVID-19 and non–COVID-19 causes.\n\n\n\n\n\n2022\n Jacob Wallace, Anthony Lollo, Kate A. Duchowny, Matthew Lavallee, Chima D. Ndumele. 2022. Disparities in Health Care Spending and Utilization Among Black and White Medicaid Enrollees JAMA Health Forum.  Abstract \n\n\nIMPORTANCE: Administrative records indicate that more than half of the 80 million Medicaid enrollees identify as belonging to a racial and ethnic minority group. Despite this, disparities within the Medicaid program remain understudied. For example, we know of no studies examining racial differences in Medicaid spending, a potential measure of how equitably state resources are allocated.\nOBJECTIVES: To examine whether and to what extent there are differences in health care spending and utilization between Black and White enrollees in Medicaid.\nDESIGN, SETTING, AND PARTICIPANTS: This cross-sectional study used calendar year 2016 administrative data from 3 state Medicaid programs and included 1 966 689 Black and White Medicaid enrollees. Analyses were performed between January 28, 2021, and October 18, 2021. EXPOSURES Self-reported race.\nMAIN OUTCOMES AND MEASURES: Rates and racial differences in health care spending and utilization (including Healthcare Effectiveness Data and Information Set [HEDIS] access measures).\nRESULTS: Of 1 966 689 Medicaid adults and children (mean [SD] age, 20.3 [17.1] years; 1 119 136 [56.9%] female), 867 183 (44.1%) self-identified as non-Hispanic Black and 1 099 506 (55.9%) selfidentified as non-Hispanic White. Results were adjusted for age, sex, Medicaid eligibility category, zip code, health status, and usual source of care. On average, annual spending on Black adult (19 years or older) Medicaid enrollees was $317 (95% CI, $259-$375) lower than White enrollees, a 6% difference. Among children (18 years or younger), annual spending on Black enrollees was $256 (14%) lower (95% CI, $222-$290). Adult Black enrollees also had 19.3 (95% CI, 16.78-21.84), or 4%, fewer primary care encounters per 100 enrollees per year compared with White enrollees. Among children, the differences in primary care utilization were larger: Black enrollees had 90.1 (95% CI, 88.2-91.8) fewer primary care encounters per 100 enrollees per year compared with White enrollees, a 23% difference. Black enrollees had lower utilization of most other services, including high-value prescription drugs, but higher emergency department use and rates of HEDIS preventive screenings.\nCONCLUSIONS AND RELEVANCE: In this cross-sectional study of US Medicaid enrollees in 3 states, Black enrollees generated lower spending and used fewer services, including primary care and recommended care for acute and chronic conditions, but had substantially higher emergency department use. While Black enrollees had higher rates of HEDIS preventive screenings, ensuring equitable access to all services in Medicaid must remain a national priority.\n\n\n\n\n\n\nWork In Progress"
   },
   {
-    "objectID": "presentations/hsr_methods.html#background",
-    "href": "presentations/hsr_methods.html#background",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Background",
-    "text": "Background\n\nMedicaid\n\nPrimary insurer of low-income populations.\nLargest insurer in the US, covers 74 million people.\nNo cost sharing, meaning no disincentive to use of care.\nLike all of health care, increasing spending.\n\nMedicaid Managed Care (MMC)\n\nAllows a private org to coordinate care for a flat payment, and keep whatever profit they can turn (i.e., \\(\\text{State Payment}_{im}-\\text{Spending}_{im}\\)).\nNow is responsible for 70% of Medicaid beneficaries."
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#concerns-about-networks",
-    "href": "presentations/hsr_methods.html#concerns-about-networks",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Concerns about networks",
-    "text": "Concerns about networks"
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#concerns-about-networks-1",
-    "href": "presentations/hsr_methods.html#concerns-about-networks-1",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Concerns about networks",
-    "text": "Concerns about networks\n\nToo narrow: access\n\n60% of Medicaid-accepting Primary Care providers report difficulty obtaining specialty care visits for patients.\nParticularly worried about cardiologist access due to lower reimbursement."
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#concerns-about-networks-2",
-    "href": "presentations/hsr_methods.html#concerns-about-networks-2",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Concerns about networks",
-    "text": "Concerns about networks\n\nToo narrow: access\n\n60% of Medicaid-accepting Primary Care providers report difficulty obtaining specialty care visits for patients.\n\nToo broad: spending\n\nWorry that marginal provider may deliver more low-value care or unnecessary services, driving spending."
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#setting-data",
-    "href": "presentations/hsr_methods.html#setting-data",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Setting & data",
-    "text": "Setting & data\n\nTennessee administrative claims data (2010-2017)\n\nHave not expanded, so no massive shifts in enrollment or payment.\nIncludes healthcare information on care provided.\nIncludes enrollment information on enrollee.\nMMC plan NPI rosters.\n\nNational Plan Provider Enumeration System NPI Registry\n\nAllows us to flag specialists.\n\nAll enrollees must be in MMC\n\nEnrollees who do not make a choice are auto-assigned (AA).\nAA algorithm prioritizes family continuity and prior plan continuity.\nA subset, those qualifying due to SSDI, are always conditionally randomized (conditional on: unit of randomization and county)."
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#variable-construction",
-    "href": "presentations/hsr_methods.html#variable-construction",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Variable construction",
-    "text": "Variable construction\n\nThree measures of spending\n\nSpending includes total spending, outpatient spending, inpatient spending, and ED spending.\n\nA single treatment variable\n\nNumber of (nonghost) cardiologists per 1,000 enrollees in a county-plan-year.\n\nSet of controls\n\nRandomization variables (UoR, and county, \\(\\omega\\)).\nPlan FE.\nPCP network breadth."
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#study-population",
-    "href": "presentations/hsr_methods.html#study-population",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Study population",
-    "text": "Study population"
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#spending-is-zero-inflated",
-    "href": "presentations/hsr_methods.html#spending-is-zero-inflated",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Spending is zero-inflated",
-    "text": "Spending is zero-inflated"
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#methods",
-    "href": "presentations/hsr_methods.html#methods",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Methods",
-    "text": "Methods\n\nIntent-to-treat\n\n\\(y_i=\\alpha+\\beta_1\\text{assigned card breadth}+\\beta_2\\text{assigned pcp breadth}+\\beta_3\\text{assigned plan}+\\lambda\\omega+\\varepsilon_i\\)\nHigh compliance, 97% of the sample stays in their assigned plan and assigned county.\n\nTwo-part models\n\nSimple specification, \\(\\text{assigned breadth}\\) and \\(\\omega\\).\nTwo parts theory, one part prediction."
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#choice-for-second-part",
-    "href": "presentations/hsr_methods.html#choice-for-second-part",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Choice for second part",
-    "text": "Choice for second part"
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#preliminary-results",
-    "href": "presentations/hsr_methods.html#preliminary-results",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Preliminary results",
-    "text": "Preliminary results"
-  },
-  {
-    "objectID": "presentations/hsr_methods.html#discussion-and-limitations",
-    "href": "presentations/hsr_methods.html#discussion-and-limitations",
-    "title": "The Effect of Network Breadth on Specialty Care",
-    "section": "Discussion and limitations",
-    "text": "Discussion and limitations\n\nImprecise nulls don’t make a convincing argument.\nUnclear how flexible \\(\\omega\\) specification is, and if it can carry over to two-part models.\n\nMore convincing as a propensity score?\nFalsification tests.\n\nStandard errors are likely wrong."
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Matthew Lavallee",
+    "section": "",
+    "text": "About\nI am a PhD student at the Johns Hopkins Bloomberg School of Public Health, specializing in health economics. My research focuses on Medicaid, social safety net programs, and their interactions. Before graduate school, I worked as a Pre-Doctoral Fellow at the Tobin Center for Economic Policy, where I researched Medicaid access, quality of care, and the impact of social programs on Medicaid enrollees."
   }
 ]
