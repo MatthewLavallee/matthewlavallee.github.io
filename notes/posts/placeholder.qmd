@@ -1,0 +1,10 @@
+---
+title: "Placeholder"
+description: "Post description"
+image: notes pictures/bsph.jpg
+author: "Matthew Lavallee"
+date: "10/18/2024"
+draft: True
+categories:
+  - Graduate school
+---
