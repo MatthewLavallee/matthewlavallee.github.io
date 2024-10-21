@@ -22,6 +22,8 @@ website:
         text: CV
       - href: research/index.qmd
         text: Research
+      - href: notes/index.qmd
+        text: Notes
   
   page-footer:
     left: |

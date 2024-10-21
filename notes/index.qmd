@@ -1,0 +1,9 @@
+---
+title: "Notes / Thoughts"
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  categories: true
+  sort-ui: true
+---
