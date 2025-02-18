@@ -18,9 +18,12 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/mattylavallee/
-    - icon: google-scholar
+    - icon: z
       text: Google Scholar
       href: https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en
+    - icon: z
+      text: Bluesky
+      href: https://bsky.app/profile/lavalleematt.bsky.social
 comments: false
 ---
 
