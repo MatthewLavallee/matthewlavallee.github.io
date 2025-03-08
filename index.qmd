@@ -23,7 +23,7 @@ about:
       href: https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en
     - icon: z
       text: Bluesky
-      href: https://bsky.app/profile/lavalleematt.bsky.social
+      href: https://bsky.app/profile/mplavallee.com
 comments: false
 ---
 
