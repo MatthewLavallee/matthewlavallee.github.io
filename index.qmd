@@ -7,7 +7,7 @@ format:
       dark: [cosmo, theme-dark.scss]
 about:
   template: trestles
-  image: files/profilepic.png
+  image: files/newheadshot.JPG
   links:
     - icon: github
       text: Github
