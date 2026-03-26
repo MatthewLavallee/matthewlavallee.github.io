@@ -1,36 +1,97 @@
 /*-- scss:defaults --*/
 
-// Fonts
-@import url("https://fonts.googleapis.com/css2?family=Montserrat");
-
 // Base document colors
 $body-bg: #181818;
-$body-color: white;
-$navbar-bg: #212121;
+$body-color: #e0e0e0;
+$navbar-bg: #1e1e1e;
+$link-color: #7db8d4;
+$link-hover-color: #a8d4ea;
 
 // Code blocks
 $code-block-bg-alpha: -.8;
 
-/* ------- customize collapsible text -------- */   
-.card {
-  background-color: #181818 !important;
-  border-color: white !important;
+/*-- scss:rules --*/
+
+// Navbar refinements
+.navbar {
+  border-bottom: 1px solid #333;
 }
-/* ------- customize button class -------- */
-@mixin button-variant($background, $border, $color) {
-    background-color: $body-bg;
-    border: 1px solid white;
-    color: white;
+
+.navbar .navbar-nav .nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+// About page styling
+.about-entity {
+  .about-link {
+    font-size: 0.9em;
+  }
+}
+
+// Section headings
+h2 {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-top: 1.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #333;
+}
+
+h3 {
+  font-weight: 500;
+  color: #aaa;
+}
+
+// Publication cards
+.card {
+  background-color: #1e1e1e !important;
+  border-color: #444 !important;
+  border-radius: 6px;
+}
+
+.card-body {
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+// Abstract button
+.btn-primary {
+  &.basic {
+    background-color: #1e1e1e;
+    border: 1px solid #555;
+    color: #ddd;
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 0.25em 0.75em;
+    border-radius: 4px;
 
     &:hover {
-        background-color: white;
-        border: 1px solid $body-bg;
-        color: $body-bg;
+      background-color: #333;
+      border-color: #888;
+      color: #fff;
     }
+  }
 }
 
-.btn-primary {
-    &.basic {
-        @include button-variant(black, white, white);
-    }
+// Footer
+.nav-footer {
+  font-size: 0.85em;
+  color: #999;
+}
+
+// Job Market Paper callout
+.callout-note {
+  border-left: 4px solid $link-color;
+  background-color: #1c2a33;
+  padding: 1rem 1.25rem;
+  border-radius: 4px;
+}
+
+// Page content spacing
+#quarto-content {
+  padding-top: 1rem;
 }
