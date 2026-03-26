@@ -6,33 +6,43 @@ resources:
   - CNAME
   - .well-known/
 
-
 website:
   title: "Matthew Lavallee"
   site-url: "https://www.mplavallee.com"
   repo-url: "https://github.com/MatthewLavallee/matthewlavallee.github.io"
-  description: "Website of Matthew Lavallee"
-  #cookie-consent: true
+  description: "Matthew Lavallee | PhD Student in Health Economics at Johns Hopkins"
+
+  open-graph:
+    image: https://www.mplavallee.com/files/headshot.jpg
+    description: "Matthew Lavallee | PhD Student in Health Economics at Johns Hopkins Bloomberg School of Public Health"
   google-analytics: "G-97442ZJR8T"
-  twitter-card: 
-    creator: "@lavalleemat"  
-  search: true
+  twitter-card:
+    image: https://www.mplavallee.com/files/headshot.jpg
+  search: false
   navbar:
     left:
-      - href: files/cv_lavallee.pdf
-        text: CV
+      - href: index.qmd
+        text: About
       - href: research/index.qmd
         text: Research
-      - href: notes/index.qmd
-        text: Notes
-  
+      - href: files/cv_lavallee.pdf
+        text: CV
+    right:
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en
+        aria-label: Google Scholar
+      - icon: github
+        href: https://github.com/matthewlavallee
+        aria-label: GitHub
+      - icon: envelope
+        href: mailto:mlavall3@jhu.edu
+        aria-label: Email
+
   page-footer:
     left: |
-      {{< fa regular copyright >}} 2024 Matthew Lavallee.<br>
-      
+      {{< fa regular copyright >}} 2026 Matthew Lavallee
     right: |
-      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/).<br>
-      [Source at {{< fa brands github >}} GitHub](https://github.com/MatthewLavallee/matthewlavallee.github.io).
+      Made with [Quarto](https://quarto.org/). [Source at {{< fa brands github >}} GitHub](https://github.com/MatthewLavallee/matthewlavallee.github.io).
 
 format:
   html:
@@ -42,5 +52,6 @@ format:
     mainfont: Montserrat
     fontsize: 0.95em
     toc: false
+    link-external-newwindow: true
 
 editor: visual

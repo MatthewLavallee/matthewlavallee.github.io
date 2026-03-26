@@ -1,30 +1,38 @@
 ---
 title: "Matthew Lavallee"
-format: 
+format:
   html:
     theme:
       light: [cosmo, theme-light.scss]
       dark: [cosmo, theme-dark.scss]
 about:
   template: trestles
-  image: files/newheadshot.JPG
+  image: files/headshot.jpg
+  image-alt: "Headshot of Matthew Lavallee"
   links:
+    - icon: envelope
+      text: Email
+      href: mailto:mlavall3@jhu.edu
+    - icon: mortarboard
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en
     - icon: github
-      text: Github
+      text: GitHub
       href: https://github.com/matthewlavallee
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/lavalleemat
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/mattylavallee/
-    - icon: z
-      text: Google Scholar
-      href: https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en
-    - icon: z
-      text: Bluesky
+    - text: "{{< fa brands bluesky >}} Bluesky"
       href: https://bsky.app/profile/mplavallee.com
 comments: false
 ---
 
-I am a PhD student at the Johns Hopkins Bloomberg School of Public Health, specializing in health economics. My research focuses on Medicaid, social safety net programs, and their interactions. Before graduate school, I worked as a Pre-Doctoral Fellow at the Tobin Center for Economic Policy, where I researched Medicaid access, quality of care, and the impact of social programs on Medicaid enrollees.
+I am a PhD student in the [Department of Health Policy and Management](https://publichealth.jhu.edu/departments/health-policy-and-management) at the Johns Hopkins Bloomberg School of Public Health, specializing in health economics.
+
+My research focuses on **Medicaid**, **social safety net programs**, and **their interactions**. I study how public insurance programs and other safety net policies shape program participation, access to care, and health outcomes.
+
+## Education
+
+{{< fa graduation-cap >}} **PhD in Health Economics**, Johns Hopkins Bloomberg School of Public Health *(expected 2027)*
+
+{{< fa graduation-cap >}} **BA in Economics & Mathematics**, Hampshire College *(2016 - 2020)*

@@ -1,17 +1,28 @@
 ---
 title: "Research"
-format: 
-  html:
-    theme:
-      light: [cosmo, theme-light.scss]
-      dark: [cosmo, theme-dark.scss]
 ---
 
-### Publications
+```{=html}
+<!-- UNCOMMENT THE SECTION BELOW WHEN YOUR JOB MARKET PAPER IS READY
+### Job Market Paper
+
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**Paper Title Here**
+
+One to two sentence summary of the paper and its key finding.
+
+[Paper](link-to-pdf){.btn .btn-primary .basic} [Slides](link-to-slides){.btn .btn-primary .basic}
+:::
+-->
+```
+
+## Publications
 
 ------------------------------------------------------------------------
 
-```{r,message=F,echo=F}
+```{r,message=F,echo=F,warning=F}
 #| results: asis
 
 library(tidyverse)
@@ -21,23 +32,54 @@ library(here)
 
 df<-readxl::read_xlsx(here("pubs","pubs.xlsx"))%>%
   data.table()
+
+# Fix Unicode escape sequences from xlsx encoding
+fix_unicode <- function(x) {
+  if (!is.character(x)) return(x)
+  x <- gsub("<U\\+2014>", "\u2014", x)
+  x <- gsub("<U\\+2013>", "\u2013", x)
+  x <- gsub("<U\\+2019>", "\u2019", x)
+  x <- gsub("<U\\+2018>", "\u2018", x)
+  x <- gsub("<U\\+00A0>", " ", x)
+  x <- gsub("\u00a0", " ", x)
+  x <- gsub("<U\\+2212>", "\u2212", x)
+  x <- gsub("<U\\+202F>", " ", x)
+  x <- gsub("<U\\+2009>", " ", x)
+  # Also replace actual unicode characters with HTML entities
+  x <- gsub("\u2014", "&mdash;", x)
+  x <- gsub("\u2013", "&ndash;", x)
+  x <- gsub("\u2019", "&rsquo;", x)
+  x <- gsub("\u2018", "&lsquo;", x)
+  x <- gsub("\u2212", "&#8722;", x)
+  x <- gsub("\u202f", " ", x)
+  x <- gsub("\u2009", " ", x)
+  x
+}
+df <- df[, lapply(.SD, fix_unicode)]
+
+if (nrow(df) == 0) stop("No publications found in pubs.xlsx")
+
 gluefun <- function(df) {
-  glue('<span> {df$authors}. {df$year}. [{df$title}]({df$link}) {df$journal}.</span>
-    <a 
+  has_abstract <- !is.na(df$abstract) & nchar(trimws(df$abstract)) > 0
+  abstract_html <- if (has_abstract) {
+    glue('
+    <a
     type="button"
     class="btn btn-primary basic"
     data-bs-toggle="collapse"
-    data-bs-target="#collapse{df$short_id}" 
-    aria-expanded="false" 
+    data-bs-target="#collapse{df$short_id}"
+    aria-expanded="false"
     aria-controls="collapseExample"
     >
     Abstract
-    </a> 
+    </a>
 <div class="collapse" id="collapse{df$short_id}">
   <div class="card card-body">
     {df$abstract}
   </div>
-</div><br>')%>%print()
+</div>')
+  } else { "" }
+  glue('<span> {df$authors}. {df$year}. [{df$title}]({df$link}). <em>{df$journal}</em>.</span>{abstract_html}<div style="margin-bottom: 1.25rem;"></div>')%>%print()
 }
 
 
@@ -46,13 +88,33 @@ for (i in 1:nrow(df[,.N,year])) {
   y<-df[,.N,year][order(-year)][i,year]
   pubs_y<-df[year==y]
   print(glue(""))
-  print(glue('#### {y}'))
+  print(glue('### {y}'))
   pubs_y[order(date)]%>%
     split(1:nrow(pubs_y))%>%
     walk(gluefun)
 }
 ```
 
-### Work In Progress
+```{=html}
+<!-- HIDDEN: Other Articles
+## Other Articles
 
-------------------------------------------------------------------------
+---
+
+Mark Meiselbach, **Matthew Lavallee**. 2026. [H.R.1 Threatens The Stability Of Medicaid Managed Care](https://www.healthaffairs.org/content/forefront/h-r-1-threatens-stability-medicaid-managed-care). *Health Affairs Forefront*.
+-->
+```
+
+```{=html}
+<!-- HIDDEN: Work in Progress
+## Work in Progress
+
+---
+
+**The Effect of Specialty Network Breadth: Evidence from Random Assignment in Medicaid Managed Care**
+
+**Does Generosity Matter? Evidence from the Supplemental Nutrition Assistance Program**
+
+**The Effect of Network Adequacy Standards: Evidence from Medicare Advantage**
+-->
+```

@@ -1,5 +1,6 @@
 ---
 title: "Notes / Thoughts"
+draft: true
 listing:
   contents: posts
   type: default
