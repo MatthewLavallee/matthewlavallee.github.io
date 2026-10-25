@@ -223,3 +223,17 @@ table.table {
 #quarto-content {
   padding-top: 1.5rem;
 }
+
+// ---- Media coverage list (inside a publication's Media dropdown) ---------------------
+.pub .pub-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li + li { margin-top: 0.55rem; }
+  a { font-weight: 500; }
+  .pub-media-meta {
+    display: block;
+    font-size: 0.85rem;
+    color: $c-muted;
+  }
+}
