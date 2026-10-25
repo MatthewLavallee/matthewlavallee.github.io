@@ -1,94 +1,30 @@
 /*-- scss:defaults --*/
 
-// Base document colors
-$body-color: #2c2c2c;
-$link-color: #1a5276;
-$link-hover-color: #0d3b5e;
+// Typography: Inter for text, Source Serif 4 for headings and the site name.
+$web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap";
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+// Palette (shared rules in _theme-common.scss read these)
+$c-bg: #fcfbf8;
+$c-surface: #f4f2ec;
+$c-ink: #1d2127;
+$c-body: #33383f;
+$c-muted: #646b75;
+$c-rule: #e6e2d9;
+$c-accent: #1f4e79;
+
+$body-bg: $c-bg;
+$body-color: $c-body;
+$navbar-bg: $c-bg;
+$navbar-fg: $c-ink;
+$link-color: $c-accent;
+$link-hover-color: #143656;
+$footer-bg: $c-bg;
 
 // Code blocks
 $code-block-bg-alpha: -.8;
 
 /*-- scss:rules --*/
 
-// Navbar refinements
-.navbar {
-  border-bottom: 1px solid #e8e8e8;
-}
-
-.navbar .navbar-nav .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  font-size: 0.85em;
-}
-
-// About page styling
-.about-entity {
-  .about-link {
-    font-size: 0.9em;
-  }
-}
-
-// Section headings
-h2 {
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  margin-top: 1.5rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 2px solid #e8e8e8;
-}
-
-h3 {
-  font-weight: 500;
-  color: #555;
-}
-
-// Publication list styling
-.card {
-  border-color: #e0e0e0 !important;
-  border-radius: 6px;
-}
-
-.card-body {
-  font-size: 0.9em;
-  line-height: 1.6;
-  color: #444;
-}
-
-// Abstract button
-.btn-primary {
-  &.basic {
-    background-color: white;
-    border: 1px solid #c0c0c0;
-    color: #333;
-    font-size: 0.8em;
-    font-weight: 500;
-    padding: 0.25em 0.75em;
-    border-radius: 4px;
-
-    &:hover {
-      background-color: #f0f0f0;
-      border-color: #999;
-      color: #111;
-    }
-  }
-}
-
-// Footer
-.nav-footer {
-  font-size: 0.85em;
-  color: #767676;
-}
-
-// Job Market Paper callout
-.callout-note {
-  border-left: 4px solid $link-color;
-  background-color: #f8fafe;
-  padding: 1rem 1.25rem;
-  border-radius: 4px;
-}
-
-// Page content spacing
-#quarto-content {
-  padding-top: 1rem;
-}
+@import "theme-common";

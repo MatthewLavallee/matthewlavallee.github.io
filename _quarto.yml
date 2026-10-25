@@ -5,19 +5,22 @@ project:
 resources:
   - CNAME
   - .well-known/
+  - files/apple-touch-icon.png
+  - jmp/index.html
 
 website:
   title: "Matthew Lavallee"
-  site-url: "https://www.mplavallee.com"
+  site-url: "https://mplavallee.com"
   repo-url: "https://github.com/MatthewLavallee/matthewlavallee.github.io"
-  description: "Matthew Lavallee | PhD Student in Health Economics at Johns Hopkins"
+  description: "Matthew Lavallee | PhD Candidate in Health Economics at Johns Hopkins"
+  favicon: files/favicon.png
 
   open-graph:
-    image: https://www.mplavallee.com/files/headshot.jpg
-    description: "Matthew Lavallee | PhD Student in Health Economics at Johns Hopkins Bloomberg School of Public Health"
+    image: https://mplavallee.com/files/headshot.jpg
+    description: "Matthew Lavallee | PhD Candidate in Health Economics at Johns Hopkins Bloomberg School of Public Health"
   google-analytics: "G-97442ZJR8T"
   twitter-card:
-    image: https://www.mplavallee.com/files/headshot.jpg
+    image: https://mplavallee.com/files/headshot.jpg
   search: false
   navbar:
     left:
@@ -25,6 +28,8 @@ website:
         text: About
       - href: research/index.qmd
         text: Research
+      - href: teaching/index.qmd
+        text: Teaching
       - href: files/cv_lavallee.pdf
         text: CV
     right:
@@ -49,9 +54,11 @@ format:
     theme:
       light: [cosmo, theme-light.scss]
       dark: [cosmo, theme-dark.scss]
-    mainfont: Montserrat
     fontsize: 0.95em
     toc: false
     link-external-newwindow: true
+    include-in-header:
+      text: |
+        <link rel="apple-touch-icon" href="/files/apple-touch-icon.png">
 
 editor: visual

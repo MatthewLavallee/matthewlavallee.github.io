@@ -1,26 +1,17 @@
 ---
 title: "Research"
+description-meta: "Research by Matthew Lavallee on Medicaid, SNAP, Medicare Advantage, and the social safety net, published in JAMA, JAMA Internal Medicine, JAMA Health Forum, and JAMA Network Open."
 ---
 
-```{=html}
-<!-- UNCOMMENT THE SECTION BELOW WHEN YOUR JOB MARKET PAPER IS READY
-### Job Market Paper
+## Job Market Paper
 
----
+::: {.jmp-card}
+My job market paper is available as a passcode-protected draft.
 
-::: {.callout-note appearance="simple" icon=false}
-**Paper Title Here**
-
-One to two sentence summary of the paper and its key finding.
-
-[Paper](link-to-pdf){.btn .btn-primary .basic} [Slides](link-to-slides){.btn .btn-primary .basic}
+[Read the paper](/jmp/){.jmp-link}
 :::
--->
-```
 
 ## Publications
-
-------------------------------------------------------------------------
 
 ```{r,message=F,echo=F,warning=F}
 #| results: asis
@@ -61,38 +52,31 @@ if (nrow(df) == 0) stop("No publications found in pubs.xlsx")
 
 gluefun <- function(df) {
   has_abstract <- !is.na(df$abstract) & nchar(trimws(df$abstract)) > 0
-  abstract_html <- if (has_abstract) {
-    glue('
-    <a
-    type="button"
-    class="btn btn-primary basic"
-    data-bs-toggle="collapse"
-    data-bs-target="#collapse{df$short_id}"
-    aria-expanded="false"
-    aria-controls="collapseExample"
-    >
-    Abstract
-    </a>
-<div class="collapse" id="collapse{df$short_id}">
-  <div class="card card-body">
-    {df$abstract}
-  </div>
-</div>')
+  toggle <- if (has_abstract) {
+    glue('<span class="pub-sep">&middot;</span><button type="button" class="pub-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#collapse{df$short_id}" aria-expanded="false" aria-controls="collapse{df$short_id}">Abstract</button>')
   } else { "" }
-  glue('<span> {df$authors}. {df$year}. [{df$title}]({df$link}). <em>{df$journal}</em>.</span>{abstract_html}<div style="margin-bottom: 1.25rem;"></div>')%>%print()
+  abstract <- if (has_abstract) {
+    glue('<div class="collapse" id="collapse{df$short_id}"><div class="pub-abstract">{df$abstract}</div></div>')
+  } else { "" }
+  print(glue('
+
+::: {{.pub}}
+[{df$title}]({df$link}){{.pub-title}}
+
+[{df$authors}]{{.pub-authors}}
+
+[{df$journal}<span class="pub-sep">&middot;</span>{df$year}{toggle}]{{.pub-venue}}
+
+{abstract}
+:::
+
+'))
 }
 
-
-
-for (i in 1:nrow(df[,.N,year])) {
-  y<-df[,.N,year][order(-year)][i,year]
-  pubs_y<-df[year==y]
-  print(glue(""))
-  print(glue('### {y}'))
-  pubs_y[order(date)]%>%
-    split(1:nrow(pubs_y))%>%
-    walk(gluefun)
-}
+# newest first
+df[order(-as.numeric(year), -as.numeric(date))] %>%
+  split(seq_len(nrow(df))) %>%
+  walk(gluefun)
 ```
 
 ```{=html}
@@ -102,19 +86,5 @@ for (i in 1:nrow(df[,.N,year])) {
 ---
 
 Mark Meiselbach, **Matthew Lavallee**. 2026. [H.R.1 Threatens The Stability Of Medicaid Managed Care](https://www.healthaffairs.org/content/forefront/h-r-1-threatens-stability-medicaid-managed-care). *Health Affairs Forefront*.
--->
-```
-
-```{=html}
-<!-- HIDDEN: Work in Progress
-## Work in Progress
-
----
-
-**The Effect of Specialty Network Breadth: Evidence from Random Assignment in Medicaid Managed Care**
-
-**Does Generosity Matter? Evidence from the Supplemental Nutrition Assistance Program**
-
-**The Effect of Network Adequacy Standards: Evidence from Medicare Advantage**
 -->
 ```
