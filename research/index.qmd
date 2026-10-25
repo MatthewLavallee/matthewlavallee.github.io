@@ -42,14 +42,34 @@ df <- df[, lapply(.SD, fix_unicode)]
 
 if (nrow(df) == 0) stop("No publications found in pubs.xlsx")
 
+# Each line of the media column: Outlet | Date | Headline | URL
+media_html <- function(x) {
+  lines <- trimws(strsplit(x, "\n")[[1]])
+  items <- map_chr(lines[nchar(lines) > 0], function(l) {
+    f <- trimws(strsplit(l, "|", fixed = TRUE)[[1]])
+    glue('<li><a href="{f[4]}">{f[3]}</a><span class="pub-media-meta"><em>{f[1]}</em><span class="pub-sep">&middot;</span>{f[2]}</span></li>')
+  })
+  paste0('<ul class="pub-media">', paste(items, collapse = ""), '</ul>')
+}
+
+has_text <- function(x) !is.null(x) && !is.na(x) && nchar(trimws(x)) > 0
+
+toggle_btn <- function(id, label) {
+  glue('<span class="pub-sep">&middot;</span><button type="button" class="pub-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#{id}" aria-expanded="false" aria-controls="{id}">{label}</button>')
+}
+
 gluefun <- function(df) {
-  has_abstract <- !is.na(df$abstract) & nchar(trimws(df$abstract)) > 0
-  toggle <- if (has_abstract) {
-    glue('<span class="pub-sep">&middot;</span><button type="button" class="pub-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#collapse{df$short_id}" aria-expanded="false" aria-controls="collapse{df$short_id}">Abstract</button>')
-  } else { "" }
-  abstract <- if (has_abstract) {
-    glue('<div class="collapse" id="collapse{df$short_id}"><div class="pub-abstract">{df$abstract}</div></div>')
-  } else { "" }
+  toggles <- ""; panels <- ""
+  if (has_text(df$abstract)) {
+    id <- glue("abstract-{df$short_id}")
+    toggles <- paste0(toggles, toggle_btn(id, "Abstract"))
+    panels <- paste0(panels, glue('<div class="collapse" id="{id}"><div class="pub-abstract">{df$abstract}</div></div>'))
+  }
+  if (has_text(df$media)) {
+    id <- glue("media-{df$short_id}")
+    toggles <- paste0(toggles, toggle_btn(id, "Media"))
+    panels <- paste0(panels, glue('<div class="collapse" id="{id}"><div class="pub-abstract">{media_html(df$media)}</div></div>'))
+  }
   print(glue('
 
 ::: {{.pub}}
@@ -57,9 +77,9 @@ gluefun <- function(df) {
 
 [{df$authors}]{{.pub-authors}}
 
-[{df$journal}<span class="pub-sep">&middot;</span>{df$year}{toggle}]{{.pub-venue}}
+[{df$journal}<span class="pub-sep">&middot;</span>{df$year}{toggles}]{{.pub-venue}}
 
-{abstract}
+{panels}
 :::
 
 '))
