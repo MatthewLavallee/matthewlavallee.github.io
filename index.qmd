@@ -11,21 +11,12 @@ about:
   image: files/headshot.jpg
   image-alt: "Headshot of Matthew Lavallee"
   links:
-    - icon: file-earmark-person
-      text: CV
-      href: files/cv_lavallee.pdf
-    - icon: file-earmark-lock
-      text: Job Market Paper
-      href: jmp/
     - icon: envelope
       text: Email
       href: mailto:mlavall3@jhu.edu
     - icon: mortarboard
       text: Google Scholar
       href: https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en
-    - icon: github
-      text: GitHub
-      href: https://github.com/matthewlavallee
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/mattylavallee/
