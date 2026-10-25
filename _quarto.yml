@@ -30,6 +30,8 @@ website:
         text: Research
       - href: teaching/index.qmd
         text: Teaching
+      - href: media/index.qmd
+        text: Media
       - href: files/cv_lavallee.pdf
         text: CV
     right:

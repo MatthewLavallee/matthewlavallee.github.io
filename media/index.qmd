@@ -1,0 +1,22 @@
+---
+title: "Media"
+description-meta: "Media coverage of research by Matthew Lavallee."
+---
+
+## 2026
+
+::: {.pub}
+[Why millions of seniors have suddenly lost health care coverage](https://www.washingtonpost.com/health/2026/03/28/insurance-health-care-medicare-seniors/){.pub-title}
+
+[*The Washington Post*<span class="pub-sep">&middot;</span>March 28, 2026]{.pub-venue}
+
+[Covers: [Forced Disenrollments Among Medicare Advantage Beneficiaries Following 2026 Plan Exits](https://jamanetwork.com/journals/jama/fullarticle/2845237), *JAMA*]{.pub-authors}
+:::
+
+::: {.pub}
+[Millions of US Medicare Advantage enrollees forced to switch plans, study finds](https://www.reuters.com/legal/litigation/millions-us-medicare-advantage-enrollees-forced-switch-plans-study-finds-2026-02-18/){.pub-title}
+
+[*Reuters*<span class="pub-sep">&middot;</span>February 18, 2026]{.pub-venue}
+
+[Covers: [Forced Disenrollments Among Medicare Advantage Beneficiaries Following 2026 Plan Exits](https://jamanetwork.com/journals/jama/fullarticle/2845237), *JAMA*]{.pub-authors}
+:::
