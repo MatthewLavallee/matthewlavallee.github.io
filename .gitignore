@@ -7,3 +7,12 @@
 .DS_Store
 ~$*
 *.pages
+
+# Passcode-locked JMP: plaintext paper and intermediates never get committed
+jmp/_build/*.pdf
+jmp/_build/viewer.html
+jmp/_build/out/
+jmp/_build/*.aux
+jmp/_build/*.log
+jmp/_build/*.fls
+jmp/_build/*.fdb_latexmk

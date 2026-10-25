@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<script>try{if(localStorage.getItem("quarto-color-scheme")==="alternate")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+<title>Job Market Paper | Matthew Lavallee</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
+<style>
+:root{--bg:#fcfbf8;--ink:#1d2127;--muted:#646b75;--accent:#1f4e79;--line:#e6e2d9}
+:root[data-theme="dark"]{--bg:#15171a;--ink:#ecebe7;--muted:#9ba2ac;--accent:#8fbde2;--line:#2d3137}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line)}
+header a.home{color:var(--ink);text-decoration:none;font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:1.1em}
+.actions a{color:var(--accent);text-decoration:none;font-weight:500;font-size:.9em;margin-left:16px}
+iframe{display:block;width:100%;height:calc(100% - 56px);border:0}
+</style></head><body>
+<header><a class="home" href="/">Matthew Lavallee</a>
+<span class="actions"><a id="open" target="_blank" rel="noopener">Open in new tab</a><a id="dl" download="lavallee_jmp.pdf">Download PDF</a></span></header>
+<iframe id="viewer" title="Job market paper"></iframe>
+<script>
+(function(){
+  var b64="__PDF_B64__";
+  var bin=atob(b64), bytes=new Uint8Array(bin.length);
+  for(var i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
+  var url=URL.createObjectURL(new Blob([bytes],{type:"application/pdf"}));
+  document.getElementById("viewer").src=url;
+  document.getElementById("open").href=url;
+  document.getElementById("dl").href=url;
+})();
+</script></body></html>
