@@ -223,19 +223,3 @@ table.table {
 #quarto-content {
   padding-top: 1.5rem;
 }
-
-// ---- Job market paper card (Research) ------------------------------------------------
-.jmp-card {
-  padding: 1rem 1.25rem;
-  background: $c-surface;
-  border-left: 3px solid $c-accent;
-  border-radius: 0 6px 6px 0;
-  p { margin: 0; }
-  p + p { margin-top: 0.5rem; }
-  .jmp-link {
-    font-weight: 600;
-    text-decoration: none;
-    &::after { content: " \2192"; }
-    &:hover { text-decoration: underline; }
-  }
-}
