@@ -3,14 +3,6 @@ title: "Research"
 description-meta: "Research by Matthew Lavallee on Medicaid, SNAP, Medicare Advantage, and the social safety net, published in JAMA, JAMA Internal Medicine, JAMA Health Forum, and JAMA Network Open."
 ---
 
-## Job Market Paper
-
-::: {.jmp-card}
-My job market paper is available as a passcode-protected draft.
-
-[Read the paper](/jmp/){.jmp-link}
-:::
-
 ## Publications
 
 ```{r,message=F,echo=F,warning=F}
