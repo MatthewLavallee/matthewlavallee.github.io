@@ -21,8 +21,7 @@ if [[ ${#STATICRYPT_PASSWORD} -lt 14 ]]; then
 fi
 
 # Embed the PDF in the viewer page
-B64=$(base64 -i jmp.pdf | tr -d '\n')
-python3 -c 'import sys; t=open("viewer_template.html").read(); open("viewer.html","w").write(t.replace("__PDF_B64__", sys.argv[1]))' "$B64"
+python3 -I -c 'import base64; t=open("viewer_template.html").read(); b=base64.b64encode(open("jmp.pdf","rb").read()).decode(); open("viewer.html","w").write(t.replace("__PDF_B64__", b))'
 
 # Encrypt the viewer page into jmp/index.html
 rm -rf out
