@@ -6,7 +6,6 @@ resources:
   - CNAME
   - .well-known/
   - files/apple-touch-icon.png
-  - jmp/index.html
 
 website:
   title: "Matthew Lavallee"
