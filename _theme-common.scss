@@ -95,6 +95,21 @@ strong { font-weight: 600; color: $c-ink; }
 .navbar .quarto-color-scheme-toggle .bi::before,
 .navbar .navbar-nav .nav-link .bi { color: $c-muted; }
 
+// In the collapsed phone/tablet menu the Scholar and Email links are icon-only rows; print their
+// names beside the icons. The text comes from the icon's aria-label, so screen readers still hear
+// each name once.
+@media (max-width: 991.98px) {
+  #navbarCollapse .nav-link i.bi[aria-label]::after {
+    content: attr(aria-label);
+    margin-left: 0.6rem;
+    font-family: $font-family-sans-serif;
+    font-style: normal;
+    font-size: 0.92rem;
+    font-weight: 500;
+    vertical-align: 0.15em;
+  }
+}
+
 // ---- About page (trestles) -----------------------------------------------------
 .about-entity {
   .about-image {
@@ -197,6 +212,16 @@ strong { font-weight: 600; color: $c-ink; }
     &:hover { color: $c-accent; text-decoration: underline; }
   }
 
+  // Touch screens never show the hover underline, so mark the titles as links there.
+  @media (hover: none) {
+    .pub-title {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+      text-decoration-color: rgba($c-accent, 0.35);
+    }
+  }
+
   .pub-authors {
     display: block;
     margin-top: 0.3rem;
@@ -240,6 +265,13 @@ strong { font-weight: 600; color: $c-ink; }
     &:hover { text-decoration: underline; }
   }
 
+  // The Media button names the outlets, which is too long for the venue line on a phone:
+  // drop its separator and give it a line of its own.
+  @media (max-width: 575.98px) {
+    .pub-sep-media { display: none; }
+    .pub-toggle-media { display: block; margin-top: 0.15rem; text-align: left; text-wrap: balance; }
+  }
+
   .pub-abstract {
     margin-top: 0.75rem;
     padding: 0.85rem 1rem;
@@ -271,6 +303,27 @@ table.table {
 .table-hover > tbody > tr:hover > * {
   --bs-table-accent-bg: #{rgba($c-accent, 0.05)};
   color: inherit;
+}
+
+// Keep year ranges ("2024–2026") on one line where there is room. Below 375px they wrap after the
+// dash; keeping them whole there would push the table past the screen edge.
+@media (min-width: 375px) {
+  table.table td:first-child { white-space: nowrap; }
+}
+
+// The two teaching-assistant tables share one column grid so their columns line up.
+#teaching-assistant table.table {
+  th:first-child { width: 6.25rem; }
+  th:nth-child(2) { width: 53%; }
+}
+
+// Key under a table (Teaching: "‡ Graduate level.")
+.table-note {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: $c-muted;
+  p { margin: 0; }
 }
 
 // ---- Callouts, footer, layout --------------------------------------------------------
@@ -305,3 +358,24 @@ table.table {
     color: $c-muted;
   }
 }
+
+// ---- Keyboard focus -------------------------------------------------------------------
+// Bootstrap replaces the outline on links and buttons with a faint ring, and on the current
+// page's navbar link the active underline hides even that. Draw a clear outline for keyboard
+// focus only (:focus-visible does not match mouse clicks).
+:focus-visible {
+  outline: 2px solid $c-accent !important;
+  outline-offset: 2px;
+}
+
+.navbar .navbar-nav .nav-link:focus-visible:not(.active),
+.navbar-toggler:focus-visible,
+.btn:focus-visible { box-shadow: none; }  // one outline, not outline + ring
+
+// In the collapsed menu the outline would be clipped by the menu edges; draw it inside the link.
+@media (max-width: 991.98px) {
+  #navbarCollapse .nav-link:focus-visible { outline-offset: -2px; }
+}
+
+// Keep focused and linked-to elements clear of the fixed navbar.
+a, button { scroll-margin-top: 5rem; }

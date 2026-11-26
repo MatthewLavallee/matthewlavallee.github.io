@@ -1,5 +1,6 @@
 ---
 title: "Teaching"
+tbl-colwidths: false
 description-meta: "Teaching experience of Matthew Lavallee: guest lectures and teaching assistantships in health economics, health policy, and research methods at Johns Hopkins."
 ---
 
@@ -18,15 +19,19 @@ description-meta: "Teaching experience of Matthew Lavallee: guest lectures and t
 
 | Year | Course | Instructor |
 |:-----|:-------|:-----------|
+| 2026–2027 | Intermediate Health Economics^‡^ | Mark Meiselbach |
 | 2026 | Fundamentals of Health Policy & Management | Nicholas Meyerson |
-| 2026 | Intermediate Health Economics^‡^ | Mark Meiselbach |
 | 2026 | Managed Care and Health Insurance^‡^ | Gretchen Jacobson & Jonathan Weiner |
 | 2025 | Strategic Leadership and Decision Making^‡^ | Conan Dickson |
 | 2025 | Advanced Methods in Health Services Research: Analysis^‡^ | Katherine Miller |
 | 2025 | Fundamentals of Health Policy & Management | Conan Dickson & John Colmers |
-| 2024– | Applied Microeconomics^‡^ | Matthew Eisenberg |
+| 2024–2026 | Applied Microeconomics^‡^ | Matthew Eisenberg |
 
 : {.hover}
+
+::: {.table-note}
+^‡^ Graduate level.
+:::
 
 ### Hampshire College
 
@@ -36,5 +41,3 @@ description-meta: "Teaching experience of Matthew Lavallee: guest lectures and t
 | 2018 | Introduction to Statistics | Ethan Meyers |
 
 : {.hover}
-
-^‡^ Graduate level.

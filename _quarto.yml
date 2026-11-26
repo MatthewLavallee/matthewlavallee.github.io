@@ -1,3 +1,8 @@
+# Build with the Quarto bundled in RStudio (1.6.42), from the repo root:
+#   /Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto render
+# The quarto on PATH (1.11.9 since Nov 2026) renders the pages slightly differently.
+# (A quarto-required pin was tried and dropped: a blocked full render empties docs/ first.)
+
 project:
   type: website
   output-dir: docs
@@ -6,11 +11,11 @@ resources:
   - CNAME
   - .well-known/
   - files/apple-touch-icon.png
+  - favicon.ico
 
 website:
   title: "Matthew Lavallee"
   site-url: "https://mplavallee.com"
-  repo-url: "https://github.com/MatthewLavallee/matthewlavallee.github.io"
   description: "Matthew Lavallee | PhD Candidate in Health Economics and Policy at Johns Hopkins"
   favicon: files/favicon.png
 
@@ -35,9 +40,6 @@ website:
       - icon: mortarboard
         href: https://scholar.google.com/citations?user=5OUEFSUAAAAJ&hl=en
         aria-label: Google Scholar
-      - icon: github
-        href: https://github.com/matthewlavallee
-        aria-label: GitHub
       - icon: envelope
         href: mailto:mlavall3@jhu.edu
         aria-label: Email
@@ -46,7 +48,7 @@ website:
     left: |
       © 2026 Matthew Lavallee
     right: |
-      Made with [Quarto](https://quarto.org/). [Source at <i class="bi bi-github" aria-hidden="true"></i> GitHub](https://github.com/MatthewLavallee/matthewlavallee.github.io).
+      Made with [Quarto](https://quarto.org/).
 
 format:
   html:

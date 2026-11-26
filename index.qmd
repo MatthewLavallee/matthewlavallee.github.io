@@ -12,7 +12,7 @@ about:
   image-alt: "Headshot of Matthew Lavallee"
   links:
     - icon: envelope
-      text: Email
+      text: mlavall3@jhu.edu
       href: mailto:mlavall3@jhu.edu
     - icon: mortarboard
       text: Google Scholar

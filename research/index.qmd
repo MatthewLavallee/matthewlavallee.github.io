@@ -43,31 +43,43 @@ df <- df[, lapply(.SD, fix_unicode)]
 if (nrow(df) == 0) stop("No publications found in pubs.xlsx")
 
 # Each line of the media column: Outlet | Date | Headline | URL
-media_html <- function(x) {
+media_lines <- function(x) {
   lines <- trimws(strsplit(x, "\n")[[1]])
-  items <- map_chr(lines[nchar(lines) > 0], function(l) {
+  lines[nchar(lines) > 0]
+}
+
+media_html <- function(x) {
+  items <- map_chr(media_lines(x), function(l) {
     f <- trimws(strsplit(l, "|", fixed = TRUE)[[1]])
     glue('<li><a href="{f[4]}">{f[3]}</a><span class="pub-media-meta"><em>{f[1]}</em><span class="pub-sep">&middot;</span>{f[2]}</span></li>')
   })
   paste0('<ul class="pub-media">', paste(items, collapse = ""), '</ul>')
 }
 
+# Outlet names for the Media button label, e.g. "The Washington Post, Reuters"
+media_outlets <- function(x) {
+  outlets <- map_chr(media_lines(x), ~ trimws(strsplit(.x, "|", fixed = TRUE)[[1]][1]))
+  paste(unique(outlets), collapse = ", ")
+}
+
 has_text <- function(x) !is.null(x) && !is.na(x) && nchar(trimws(x)) > 0
 
-toggle_btn <- function(id, label) {
-  glue('<span class="pub-sep">&middot;</span><button type="button" class="pub-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#{id}" aria-expanded="false" aria-controls="{id}">{label}</button>')
+# kind ("abstract" or "media") adds pub-sep-{kind} / pub-toggle-{kind} classes for styling
+toggle_btn <- function(id, label, kind) {
+  glue('<span class="pub-sep pub-sep-{kind}">&middot;</span><button type="button" class="pub-toggle pub-toggle-{kind} collapsed" data-bs-toggle="collapse" data-bs-target="#{id}" aria-expanded="false" aria-controls="{id}">{label}</button>')
 }
 
 gluefun <- function(df) {
   toggles <- ""; panels <- ""
   if (has_text(df$abstract)) {
     id <- glue("abstract-{df$short_id}")
-    toggles <- paste0(toggles, toggle_btn(id, "Abstract"))
-    panels <- paste0(panels, glue('<div class="collapse" id="{id}"><div class="pub-abstract">{df$abstract}</div></div>'))
+    toggles <- paste0(toggles, toggle_btn(id, "Abstract", "abstract"))
+    # blank lines around the abstract so every section, including the last, becomes a <p>
+    panels <- paste0(panels, glue('<div class="collapse" id="{id}"><div class="pub-abstract">\n\n{df$abstract}\n\n</div></div>'))
   }
   if (has_text(df$media)) {
     id <- glue("media-{df$short_id}")
-    toggles <- paste0(toggles, toggle_btn(id, "Media"))
+    toggles <- paste0(toggles, toggle_btn(id, paste0("Media: ", media_outlets(df$media)), "media"))
     panels <- paste0(panels, glue('<div class="collapse" id="{id}"><div class="pub-abstract">{media_html(df$media)}</div></div>'))
   }
   print(glue('
@@ -91,12 +103,12 @@ df[order(-as.numeric(year), -as.numeric(date))] %>%
   walk(gluefun)
 ```
 
-```{=html}
-<!-- HIDDEN: Other Articles
+::: {.content-hidden}
+<!-- Kept off the site on purpose; content-hidden leaves it out of the rendered HTML entirely. -->
+
 ## Other Articles
 
 ---
 
 Mark Meiselbach, **Matthew Lavallee**. 2026. [H.R.1 Threatens The Stability Of Medicaid Managed Care](https://www.healthaffairs.org/content/forefront/h-r-1-threatens-stability-medicaid-managed-care). *Health Affairs Forefront*.
--->
-```
+:::
