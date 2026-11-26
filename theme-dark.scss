@@ -1,8 +1,10 @@
 /*-- scss:defaults --*/
 
 // Typography: Inter for text, Source Serif 4 for headings and the site name.
-$web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap";
-$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+// The fonts are loaded by a <link> in _quarto.yml (include-in-header), so the browser fetches them
+// alongside this stylesheet instead of after it; false turns off the theme's own @import.
+$web-font-path: false;
+$font-family-sans-serif: "Inter", "Inter Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-serif-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
 
 // Palette (shared rules in _theme-common.scss read these)
@@ -19,6 +21,7 @@ $body-color: $c-body;
 $navbar-bg: $c-bg;
 $navbar-fg: $c-ink;
 $link-color: $c-accent;
+$primary: $c-accent;
 $link-hover-color: #b8d6ef;
 $footer-bg: $c-bg;
 

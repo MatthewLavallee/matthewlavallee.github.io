@@ -2,6 +2,29 @@
 // Each theme defines the $c-* color variables, then imports this file in its rules layer.
 
 // ---- Typography ------------------------------------------------------------
+// While Inter downloads, text is drawn in Arial scaled to Inter's proportions (values computed from
+// the font files for this site's text: regular against Inter 400, bold against Inter 600), so lines
+// don't rewrap and the page doesn't jump when Inter arrives.
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial"), local("ArialMT");
+  font-weight: 400;
+  size-adjust: 106.54%;
+  ascent-override: 90.93%;
+  descent-override: 22.64%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial Bold"), local("Arial-BoldMT");
+  font-weight: 600 700;
+  size-adjust: 100.93%;
+  ascent-override: 95.98%;
+  descent-override: 23.90%;
+  line-gap-override: 0%;
+}
+
 body {
   font-feature-settings: "cv11", "ss01";
   -webkit-font-smoothing: antialiased;
@@ -75,6 +98,8 @@ strong { font-weight: 600; color: $c-ink; }
 // ---- About page (trestles) -----------------------------------------------------
 .about-entity {
   .about-image {
+    aspect-ratio: 3 / 4;  // reserves the photo's space before it loads, so the page doesn't shift
+    height: auto;
     border-radius: 6px !important;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.08);
   }
@@ -88,6 +113,7 @@ strong { font-weight: 600; color: $c-ink; }
 
   .about-subtitle, .description {
     color: $c-muted;
+    text-wrap: balance;  // even line lengths, no single word left on the last line
   }
 
   .about-links {
@@ -111,6 +137,48 @@ strong { font-weight: 600; color: $c-ink; }
 }
 
 .about-contents p { font-size: 1.02rem; }
+
+// Below 992px the trestles template stacks the photo, name and links above the bio. Keep that
+// block compact so the bio, and the job market line in it, starts on the first screen of a phone.
+@media (max-width: 991.98px) {
+  div.quarto-about-trestles .about-entity {
+    padding-right: 0;
+
+    .about-image {
+      width: 12rem !important;  // overrides the template's inline width: 20em
+      margin-bottom: 1rem;
+    }
+
+    h1.title {
+      font-size: 1.75rem;
+      margin-top: 0;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      line-height: 1.45;
+      // Narrow enough that the subtitle breaks the same way in Inter and in its fallback; at some
+      // phone widths it otherwise flips between two and three lines when Inter loads.
+      max-width: 21rem;
+      margin-inline: auto;
+    }
+
+    .about-links {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: auto;
+      row-gap: 0.4rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .about-link { font-size: 0.85rem; }
+  }
+}
+
+@media (max-width: 575.98px) {
+  div.quarto-about-trestles .about-entity .about-image { width: 10.5rem !important; }
+}
 
 // ---- Publications ----------------------------------------------------------------
 .pub {

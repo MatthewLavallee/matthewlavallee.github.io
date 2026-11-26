@@ -4,4 +4,4 @@ title: "Page Not Found"
 
 The page you're looking for doesn't exist or may have moved.
 
-[{{< fa house >}} Back to homepage](index.qmd){.btn .btn-primary .basic}
+[<i class="bi bi-house-door" aria-hidden="true"></i> Back to homepage](index.qmd){.btn .btn-primary}

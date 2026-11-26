@@ -1,6 +1,6 @@
 ---
 title: "Matthew Lavallee"
-description: "PhD Candidate in Health Economics at the Johns Hopkins Bloomberg School of Public Health"
+description: "PhD Candidate in Health Economics and Policy at the Johns Hopkins Bloomberg School of Public Health"
 format:
   html:
     theme:
@@ -31,6 +31,6 @@ I study how the design of public programs shapes access to care, health, and eco
 
 ## Education
 
-{{< fa graduation-cap >}} **PhD in Health Economics & Policy**, Johns Hopkins Bloomberg School of Public Health *(expected 2027)*
+<i class="bi bi-mortarboard-fill" aria-hidden="true"></i> **PhD in Health Economics & Policy**, Johns Hopkins Bloomberg School of Public Health *(expected 2027)*
 
-{{< fa graduation-cap >}} **BA in Economics & Mathematics**, Hampshire College *(2016–2020)*
+<i class="bi bi-mortarboard-fill" aria-hidden="true"></i> **BA in Economics & Mathematics**, Hampshire College *(2016–2020)*
